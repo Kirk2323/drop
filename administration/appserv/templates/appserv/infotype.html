@@ -1,0 +1,32 @@
+{% extends "appserv/base.html" %}
+
+{% block title %}
+Informations applications
+{% endblock %}
+
+{%block content %}
+
+{% load static %}
+
+
+<body>
+<div class="table-title">
+<h3>Types de serveur</h3>
+</div>
+<table class="table-fill">
+    <thead>
+<tr>
+    <td class="text-left">
+     Le type du serveur {{id_serveur}}... est {{type_serveur}}... Sa description est la suivante : {{description_serveur}}...
+        <p></p>
+        <p></p>
+<button>
+        <a href="/appserv/info/">Retour</a>
+        </button>
+</td>
+</tr>
+    </thead>
+</table>
+
+
+{% endblock %}

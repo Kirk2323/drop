@@ -1,0 +1,32 @@
+{% block content%}
+<section>
+    {% for appli in appserv_appli %}
+    <table class="table is-fullwidth is-hoverable">
+        <thead>
+            <tr>
+                <th> ID</th>
+                <th>Name APP</th>
+                <th>logo</th>
+                <th>Serveur</th>
+                <th>Utilisateur</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>{{appli.id}}</td>
+                    <td>{{appli.name_app}}</td>
+                    <td>{{appli.logo}}</td>
+                    <td>{{appli.serveur}}</td>
+                    <td>{{appli.utilisateur}}</td>
+                </tr>
+            </tbody>
+        </thead>
+    </table>
+    {%endfor%}
+    <p>
+    <a href="appserv/deleteappli/{{appli.id}}",class='bouton'>supprimer</a>
+    <a href="appserv/traitementupdateappli/{{appli.id}}",class='bouton'>modifier</a>
+    </p>
+
+</section>
+{%endblock%}

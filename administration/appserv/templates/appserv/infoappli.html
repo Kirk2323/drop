@@ -1,0 +1,33 @@
+{% extends "appserv/base.html" %}
+
+{% block title %}
+Informations applications
+{% endblock %}
+
+{%block content %}
+
+{% load static %}
+
+
+<body>
+<div class="table-title">
+<h3>Les informations des applications</h3>
+</div>
+<table class="table-fill">
+    <thead>
+<tr>
+    <td class="text-left">
+     L'application se nomme ...{{name_app}}, est liée au serveur ...{{serveur}} ainsi qu'aux utilisateur (...{{utilisateur}}). 
+     Voici pour finir le logo de l'application : {{logo}}
+        <p></p>
+        <p></p>
+<button>
+        <a href="/appserv/info/">Retour</a>
+        </button>
+</td>
+</tr>
+    </thead>
+</table>
+
+
+{% endblock %}

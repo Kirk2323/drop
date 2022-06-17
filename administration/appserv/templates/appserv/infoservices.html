@@ -1,0 +1,33 @@
+{% extends "appserv/base.html" %}
+
+{% block title %}
+Informations applications
+{% endblock %}
+
+{%block content %}
+
+{% load static %}
+
+
+<body>
+<div class="table-title">
+<h3>Les informations des services</h3>
+</div>
+<table class="table-fill">
+    <thead>
+<tr>
+    <td class="text-left">
+     Le service se nomme {{nom_service}}... sa date de lancement est le {{date_lancement}}... la mémoire nécessaire est de {{mem}}... La mémoire vive demandé est de {{mem_vive}}
+     ... et son serveur de lancement est  {{serveyr_lancement}}...
+        <p></p>
+        <p></p>
+<button>
+        <a href="/appserv/info/">Retour</a>
+        </button>
+</td>
+</tr>
+    </thead>
+</table>
+
+
+{% endblock %}

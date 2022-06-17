@@ -1,0 +1,32 @@
+{% extends "appserv/base.html" %}
+
+{% block title %}
+Informations applications
+{% endblock %}
+
+{%block content %}
+
+{% load static %}
+
+
+<body>
+<div class="table-title">
+<h3>Les informations des utilisateurs</h3>
+</div>
+<table class="table-fill">
+    <thead>
+<tr>
+    <td class="text-left">
+     L'utilisateur se prénomme  {{prenom}}... son nom est {{nom}}... et son adresse mail est la suivante : ...{{mail}}
+        <p></p>
+        <p></p>
+<button>
+        <a href="/appserv/info/">Retour</a>
+        </button>
+</td>
+</tr>
+    </thead>
+</table>
+
+
+{% endblock %}
